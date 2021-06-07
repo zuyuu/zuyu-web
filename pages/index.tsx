@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Logo from "../components/Logo";
+import LogoAnimated from "../components/LogoAnimated";
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
         <title>Zuyu</title>
       </Head>
       <div className="center">
-        <Logo width={150} height={150} fill="hsla(0,0%,100%,.9)" />
+        <LogoAnimated width={150} height={150} fill="hsla(0,0%,100%,.9)" />
       </div>
     </div>
   );
