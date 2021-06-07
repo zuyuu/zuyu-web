@@ -30,14 +30,7 @@ export default function LogoAnimated({ width, height, fill, id }: LogoProps) {
       id={id}
     >
       <motion.path
-        d="M0,512l0,-256l256,-0l-256,256Z"
-        initial={{ pathLength: 0, pathOffset: 1 }}
-        animate={{ pathLength: 1, pathOffset: 0 }}
-        transition={{ duration: 2 }}
-        stroke={fillVisible ? "none" : "white"}
-      />
-      <motion.path
-        d="M512,0l-0,256l-256,-0l256,-256Z"
+        d="M512,0l-512,0l0,512l512,-512Z"
         initial={{ pathLength: 0, pathOffset: 1 }}
         animate={{ pathLength: 1, pathOffset: 0 }}
         transition={{ duration: 2 }}

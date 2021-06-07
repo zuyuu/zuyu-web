@@ -23,8 +23,7 @@ export default function Logo({ width, height, fill }: LogoProps) {
         strokeMiterlimit: 2,
       }}
     >
-      <path d="M0,512l0,-256l256,-0l-256,256Z" style={{ fill }} />
-      <path d="M512,0l-0,256l-256,-0l256,-256Z" style={{ fill }} />
+      <path d="M512,0l-512,0l0,512l512,-512Z" style={{ fill }} />
       <path d="M768,512l-256,-512l512,0l-256,512Z" style={{ fill }} />
       <path d="M768,1024l-256,-512l512,0l-256,512Z" style={{ fill }} />
       <path d="M256,768l256,256l-512,-0l256,-256Z" style={{ fill }} />
