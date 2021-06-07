@@ -5,9 +5,10 @@ interface LogoProps {
   width: number;
   height: number;
   fill: string;
+  id?: string
 }
 
-export default function LogoAnimated({ width, height, fill }: LogoProps) {
+export default function LogoAnimated({ width, height, fill, id }: LogoProps) {
   const [fillVisible, setFillVisible] = useState(false);
 
   useEffect(() => {
@@ -26,6 +27,7 @@ export default function LogoAnimated({ width, height, fill }: LogoProps) {
       style={{
         transition: "0.5s",
       }}
+      id={id}
     >
       <motion.path
         d="M0,512l0,-256l256,-0l-256,256Z"

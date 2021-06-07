@@ -21,7 +21,7 @@ export default function Home() {
         twitter={{ cardType: "summary_large_image" }}
       />
       <div className="center">
-        <LogoAnimated width={150} height={150} fill="hsla(0,0%,100%,.9)" />
+        <LogoAnimated width={150} height={150} fill="hsla(0,0%,100%,.9)" id="animated_logo"/>
       </div>
     </div>
   );
