@@ -1,0 +1,29 @@
+.menu {
+  position: fixed;
+  display: flex;
+  padding: 15px;
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 100vw;
+  z-index: 2;
+}
+
+.menuLogo {
+  margin-right: 20px;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menuItemNotSelected {
+  opacity: 0.3;
+}
+
+.menuItems div {
+  margin-right: 10px;
+}
