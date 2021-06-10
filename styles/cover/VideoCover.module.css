@@ -19,12 +19,13 @@
 
 .ytBackgroundContainer {
   position: absolute;
-  transform: scale(1.5, 1.5);
-  transform-origin: center;
+  transform: scale(1.8, 1.8);
+  transform-origin: 50% 40%;
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
+  opacity: 0.8;
 }
 
 .ytBackground iframe {
