@@ -29,6 +29,7 @@ export default function PhotoCover({
         >
           <Image
             src={src}
+            alt={alt}
             layout="fill"
             objectFit="cover"
             objectPosition="50% 70%"

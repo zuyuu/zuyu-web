@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "next build && concurrently -k -n next.js,cypress \"next start\" \"cypress run\""
+    "test": "next build && concurrently -k -n next.js,cypress \"next start\" \"cypress run\"",
+    "prettier": "prettier --check *",
+    "prettify": "prettier --write *"
   },
   "dependencies": {
     "framer-motion": "^4.1.17",
