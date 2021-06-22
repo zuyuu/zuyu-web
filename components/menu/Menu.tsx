@@ -10,7 +10,7 @@ export default function Menu() {
     <div>
       <nav className={styles.menu}>
         <div className={styles.menuLogo}>
-          <Logo width={40} height={40} fill="var(--white)" />
+          <Logo width={30} fill="var(--white)" />
         </div>
         <div className={styles.menuItems}>
           <div>Zuyu</div>
