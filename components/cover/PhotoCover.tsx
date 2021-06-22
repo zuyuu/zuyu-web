@@ -20,7 +20,7 @@ export default function PhotoCover({
   return (
     <div className={styles.photoCoverContainer}>
       <div className={styles.photoCover}>
-        <div className={styles.centeredStuff}>{children}</div>
+           <div className={styles.centeredStuff}>{children}</div>
         <div
           style={{
             transition: "0.5s",
@@ -29,7 +29,6 @@ export default function PhotoCover({
         >
           <Image
             src={src}
-            alt={alt}
             layout="fill"
             objectFit="cover"
             objectPosition="50% 70%"
