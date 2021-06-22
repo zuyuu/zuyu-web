@@ -1,5 +1,5 @@
 import { NextSeo } from "next-seo";
-import VideoCover from "../components/cover/VideoCover";
+import PhotoCover from "../components/cover/PhotoCover";
 import LogoAnimated from "../components/LogoAnimated";
 import Menu from "../components/menu/Menu";
 
@@ -23,7 +23,7 @@ export default function Home() {
         twitter={{ cardType: "summary_large_image" }}
       />
       <Menu />
-      <VideoCover />
+      <PhotoCover />
     </div>
   );
 }
