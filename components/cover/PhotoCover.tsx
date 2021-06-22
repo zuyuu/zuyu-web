@@ -4,12 +4,14 @@ import Image from "next/image";
 
 interface PhotoCoverProps {
   src: string;
+  alt: string;
   imageOpacity?: number;
   children?: ReactNode;
 }
 
 export default function PhotoCover({
   src,
+  alt,
   imageOpacity,
   children,
 }: PhotoCoverProps) {
@@ -27,6 +29,7 @@ export default function PhotoCover({
         >
           <Image
             src={src}
+            alt={alt}
             layout="fill"
             objectFit="cover"
             objectPosition="50% 70%"

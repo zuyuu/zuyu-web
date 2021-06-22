@@ -1,6 +1,6 @@
 import { NextSeo } from "next-seo";
 import PhotoCover from "../components/cover/PhotoCover";
-import SampleText from "../components/home/sampleText";
+import SampleText from "../components/home/SampleText";
 import LogoAnimated from "../components/LogoAnimated";
 import Menu from "../components/menu/Menu";
 
@@ -24,7 +24,11 @@ export default function Home() {
         twitter={{ cardType: "summary_large_image" }}
       />
       <Menu />
-      <PhotoCover src="/izone.webp" imageOpacity={0.7}>
+      <PhotoCover
+        src="/izone.webp"
+        alt="Picture of Korean pop group IZ*ONE"
+        imageOpacity={0.7}
+      >
         <LogoAnimated height={150} width={150} fill="var(--white)" />
       </PhotoCover>
       <div className="globalContainer">
