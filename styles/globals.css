@@ -42,6 +42,7 @@ body {
 }
 
 :root {
+  --max-width: 898px;
   --white: hsla(0, 0%, 100%, 0.9);
   --black: #37352f;
 }
@@ -64,4 +65,10 @@ body.dark-mode {
   background-color: #1d1d1d;
   color: var(--textColor);
   transition: 0.2s;
+}
+
+.globalContainer {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 14px;
 }
