@@ -8,15 +8,15 @@ export default function Menu() {
 
   return (
     <div>
-      <nav className={styles.menu}>
+      <header className={styles.menuWithBg}>
         <div className={styles.menuLogo}>
-          <Logo width={30} fill="var(--white)" />
+          <Logo width={30} fill="var(--textColor)" />
         </div>
         <div className={styles.menuItems}>
           <div>Zuyu</div>
           <div className={styles.menuItemNotSelected}>Ahyun</div>
         </div>
-      </nav>
+      </header>
     </div>
   );
 }

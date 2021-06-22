@@ -1,11 +1,19 @@
-.menu {
+.menuWithBg {
   position: fixed;
   display: flex;
   padding: 15px;
-  color: var(--white);
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  color: inherit;
+  background-color: var(--bg-color);
+  width: 100vw;
+  z-index: 2;
+  box-shadow: var(--header-border-bottom);
+}
+
+.menuWithoutBg {
+  position: fixed;
+  display: flex;
+  padding: 15px;
+  color: inherit;
   width: 100vw;
   z-index: 2;
 }
