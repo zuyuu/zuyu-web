@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "test": "next build && concurrently -k -n next.js,cypress \"next start\" \"cypress run\"",
-    "prettier": "prettier --check .",
+    "lint": "next lint && prettier --check .",
     "prettify": "prettier --write ."
   },
   "dependencies": {
