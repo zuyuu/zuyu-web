@@ -1,5 +1,8 @@
 import { NextSeo } from "next-seo";
+import PhotoCover from "../components/cover/PhotoCover/PhotoCover";
+import HomeComponent from "../components/home/HomeComponent";
 import LogoAnimated from "../components/LogoAnimated";
+import Menu from "../components/menu/Menu/Menu";
 
 export default function Home() {
   return (
@@ -13,16 +16,27 @@ export default function Home() {
           images: [
             {
               url: "/zuyu_og_image.png",
-              alt: "Zuyu logo"
+              alt: "Zuyu logo",
             },
           ],
           site_name: "Zuyu",
         }}
         twitter={{ cardType: "summary_large_image" }}
       />
-      <div className="center">
-        <LogoAnimated width={150} height={150} fill="hsla(0,0%,100%,.9)" id="animated_logo"/>
-      </div>
+      <Menu />
+      <PhotoCover
+        src="/izone.webp"
+        alt="Picture of Korean pop group IZ*ONE"
+        imageOpacity={0.7}
+      >
+        <LogoAnimated
+          height={150}
+          width={150}
+          fill="var(--white)"
+          id="animated_logo"
+        />
+      </PhotoCover>
+      <HomeComponent />
     </div>
   );
 }

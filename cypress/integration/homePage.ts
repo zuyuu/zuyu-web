@@ -1,4 +1,4 @@
-describe("Temporary Landing Page", () => {
+describe("Home Page", () => {
   beforeEach(() => {
     cy.visit("/");
   });
@@ -33,14 +33,18 @@ describe("Temporary Landing Page", () => {
     });
   });
 
-  describe("Animated logo", () => {
-    it("fills in after two seconds to rgba(255, 255, 255, 0.9)", () => {
+  describe("Cover", () => {
+    it("animated logo fills in after two seconds to rgba(255, 255, 255, 0.9)", () => {
       cy.wait(2100);
       cy.get("#animated_logo").should(
         "have.css",
         "fill",
         "rgba(255, 255, 255, 0.9)"
       );
+    });
+
+    it("background image loads", () => {
+      cy.get("#photo-cover").should("be.visible");
     });
   });
 });

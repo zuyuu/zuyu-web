@@ -1,0 +1,41 @@
+.menuWithBg {
+  position: fixed;
+  display: flex;
+  padding: 15px;
+  color: inherit;
+  background-color: var(--bg-color);
+  width: 100vw;
+  z-index: 2;
+  box-shadow: var(--header-border-bottom);
+}
+
+.menuWithoutBg {
+  position: fixed;
+  display: flex;
+  padding: 15px;
+  color: inherit;
+  width: 100vw;
+  z-index: 2;
+}
+
+.menuLogo {
+  margin-right: 20px;
+}
+
+.menuLogo svg {
+  display: block;
+}
+
+.menuItems {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menuItemNotSelected {
+  opacity: 0.3;
+}
+
+.menuItems div {
+  margin-right: 10px;
+}
