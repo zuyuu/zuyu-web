@@ -1,8 +1,8 @@
 import { NextSeo } from "next-seo";
-import PhotoCover from "../components/cover/PhotoCover";
-import SampleText from "../components/home/SampleText";
+import PhotoCover from "../components/cover/PhotoCover/PhotoCover";
+import HomeComponent from "../components/home/HomeComponent";
 import LogoAnimated from "../components/LogoAnimated";
-import Menu from "../components/menu/Menu";
+import Menu from "../components/menu/Menu/Menu";
 
 export default function Home() {
   return (
@@ -31,9 +31,7 @@ export default function Home() {
       >
         <LogoAnimated height={150} width={150} fill="var(--white)" />
       </PhotoCover>
-      <div className="globalContainer">
-        <SampleText />
-      </div>
+      <HomeComponent />
     </div>
   );
 }

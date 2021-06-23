@@ -1,7 +1,7 @@
 import React from "react";
-import Logo from "../Logo";
+import Logo from "../../Logo";
 import useDarkMode from "use-dark-mode";
-import styles from "../../styles/menu/Menu.module.css";
+import styles from "./Menu.module.css";
 
 export default function Menu() {
   const darkMode = useDarkMode();

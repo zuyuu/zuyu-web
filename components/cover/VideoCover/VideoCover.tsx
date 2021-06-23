@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styles from "../../styles/cover/VideoCover.module.css";
-import LogoAnimated from "../LogoAnimated";
+import styles from "VideoCover.module.css";
+import LogoAnimated from "../../LogoAnimated";
 import YouTube from "react-youtube";
 
 export default function VideoCover() {

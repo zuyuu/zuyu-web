@@ -1,5 +1,5 @@
 import React, { ReactNode, useState } from "react";
-import styles from "../../styles/cover/PhotoCover.module.css";
+import styles from "./PhotoCover.module.css";
 import Image from "next/image";
 
 interface PhotoCoverProps {
