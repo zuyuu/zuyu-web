@@ -13,7 +13,7 @@ export default function Menu() {
           <Logo width={30} fill="var(--textColor)" />
         </div>
         <div className={styles.menuItems}>
-          <div>Zuyu</div>
+          <div className={styles.menuItemNotSelected}>Zuyu</div>
           <div className={styles.menuItemNotSelected}>Ahyun</div>
         </div>
       </header>

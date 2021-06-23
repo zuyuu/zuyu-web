@@ -1,9 +1,46 @@
 .showcase {
+  position: relative;
   height: 100vh;
 }
 
+.rightSide {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  width: 40%;
+  height: 100%;
+  right: 0;
+  text-align: right;
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.text {
+  color: var(--white);
+  max-width: 400px;
+  margin: auto;
+}
+
 .image {
-  position: relative;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 1130px) {
+  .text {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    max-width: var(--max-width);
+    width: 60%;
+  }
+
+  .rightSide {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    text-align: right;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
+  }
 }
