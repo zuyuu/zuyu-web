@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./Showcase.module.css";
+import Link from "next/link";
 
 interface ShowcaseProps {
   title: string;
@@ -27,7 +28,9 @@ export default function Showcase({
             An AI that can recongize faces in Asian music videos. Learn the
             members of your new favorite Kpop groups faster.
           </p>
-          <p>Learn more {"->"}</p>
+          <Link href="/zuyu">
+            <a>Learn more {"->"}</a>
+          </Link>
         </div>
       </div>
       <div className={styles.image}>

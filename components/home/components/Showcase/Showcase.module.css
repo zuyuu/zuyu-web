@@ -28,7 +28,7 @@
 @media only screen and (max-width: 1130px) {
   .text {
     position: absolute;
-    bottom: 20px;
+    bottom: 40px;
     right: 40px;
     max-width: var(--max-width);
     width: 60%;

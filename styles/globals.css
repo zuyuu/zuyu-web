@@ -41,6 +41,11 @@ body {
   font-family: "Inter";
 }
 
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
 :root {
   --max-width: 898px;
   --white: hsla(0, 0%, 100%, 0.9);
