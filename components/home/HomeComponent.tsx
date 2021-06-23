@@ -15,7 +15,14 @@ export default function HomeComponent() {
           <p>Check out some of our projects below!</p>
         </div>
       </Piece>
-      <Showcase />
+      <Showcase
+        title="Zuyu"
+        imgSrc="/dahyun.webp"
+        imgAlt="alt placeholder"
+        imgObjectPosition="30% 50%"
+        desc="An AI that can recongize faces in Asian music videos. Learn the members of your new favorite Kpop groups faster."
+        href="/zuyu"
+      />
     </div>
   );
 }

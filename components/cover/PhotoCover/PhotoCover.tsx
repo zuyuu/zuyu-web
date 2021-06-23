@@ -34,6 +34,7 @@ export default function PhotoCover({
             objectFit="cover"
             objectPosition="50% 70%"
             onLoad={() => setPhotoLoaded(true)}
+            id="photo-cover"
           />
         </div>
       </div>

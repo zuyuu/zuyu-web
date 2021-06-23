@@ -29,7 +29,12 @@ export default function Home() {
         alt="Picture of Korean pop group IZ*ONE"
         imageOpacity={0.7}
       >
-        <LogoAnimated height={150} width={150} fill="var(--white)" />
+        <LogoAnimated
+          height={150}
+          width={150}
+          fill="var(--white)"
+          id="animated_logo"
+        />
       </PhotoCover>
       <HomeComponent />
     </div>

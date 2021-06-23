@@ -16,6 +16,7 @@ export default function Showcase({
   title,
   imgSrc,
   imgAlt,
+  imgObjectPosition,
   desc,
   href,
 }: ShowcaseProps) {
@@ -23,22 +24,20 @@ export default function Showcase({
     <div className={styles.showcase}>
       <div className={styles.rightSide}>
         <div className={styles.text}>
-          <h1>Zuyu</h1>
-          <p>
-            An AI that can recongize faces in Asian music videos. Learn the
-            members of your new favorite Kpop groups faster.
-          </p>
-          <Link href="/zuyu">
+          <h1>{title}</h1>
+          <p>{desc}</p>
+          <Link href={href}>
             <a>Learn more {"->"}</a>
           </Link>
         </div>
       </div>
       <div className={styles.image}>
         <Image
-          src="/dahyun.webp"
+          src={imgSrc}
+          alt={imgAlt}
           layout="fill"
           objectFit="cover"
-          objectPosition="30% 50%"
+          objectPosition={imgObjectPosition}
         />
       </div>
     </div>
